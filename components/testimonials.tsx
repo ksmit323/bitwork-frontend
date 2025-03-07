@@ -52,7 +52,7 @@ export function Testimonials() {
               <Card className="h-full">
                 <CardContent className="p-6 flex flex-col h-full">
                   <Quote className="h-8 w-8 text-primary/20 mb-4" />
-                  <p className="flex-1 text-muted-foreground mb-6">"{testimonial.quote}"</p>
+                  <p className="flex-1 text-muted-foreground mb-6">&quot;{testimonial.quote}&quot;</p>
                   <div className="flex items-center gap-3">
                     <Avatar>
                       <AvatarImage src={testimonial.avatar} alt={testimonial.author} />

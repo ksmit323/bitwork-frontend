@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+// import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 import { ArrowRight, Code, Briefcase } from "lucide-react"
 
 export function HeroSection() {
-  const [activeTab, setActiveTab] = useState("developer")
+  // const [activeTab, setActiveTab] = useState("developer")
 
   return (
     <section className="relative">
@@ -36,15 +36,15 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="w-full max-w-4xl mx-auto mb-12"
         >
-          <Tabs defaultValue="developer" className="w-full" onValueChange={setActiveTab}>
+          <Tabs defaultValue="developer" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-8">
               <TabsTrigger value="developer" className="text-base py-3">
                 <Code className="mr-2 h-4 w-4" />
-                I'm a Developer
+                I&aposm a Developer
               </TabsTrigger>
               <TabsTrigger value="employer" className="text-base py-3">
                 <Briefcase className="mr-2 h-4 w-4" />
-                I'm Hiring
+                I&aposm Hiring
               </TabsTrigger>
             </TabsList>
             <TabsContent value="developer" className="space-y-4">
